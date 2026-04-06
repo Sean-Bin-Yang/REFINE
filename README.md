@@ -7,8 +7,9 @@ This code is the official PyTorch implementation of our paper: REFINE: Trajector
 **REFINE** is a simple yet effective representation learning framework for trajectory data, equipped with closed-loop theoretical guarantees through a transcription refinement mechanism. It integrates road network–aware generative reconstruction with feedback-driven contrastive learning, enabling the model to capture both fine-grained local movement semantics and global spatio-temporal dependencies—without relying on manually designed augmentation views.
 
 <div align=center>
-<img src="framework.png"/>
+<img src="Framework.png"/>
 </div>
+
 ### Quickstart
 
 > [!IMPORTANT]
@@ -24,7 +25,7 @@ pip install -r requirements.txt
 
 #### 2. Data Preparation
 
-We conduct experiments on four trajectory datasets and their corresponding road networks: Porto, Beijing, Xi’an, and Chengdu. For reproducibility, the Porto dataset is provided.
+We conduct experiments on four trajectory datasets and their corresponding road networks: Porto, Beijing, Xi’an, and Chengdu. For reproducibility, the [Porto](https://drive.google.com/file/d/1UsqNyAk-nJWj4s5qIJk1hdlEfWVde1Yt/view?usp=sharing) dataset is provided.
 
 To obtain path trajectories, please refer to the map-matching method [FMM](https://github.com/cyang-kth/fmm). For computing trajectory similarity, you may use [traj-dist](https://github.com/bguillouet/traj-dist). To generate detour trajectories, please refer to [JCLRNT](https://github.com/mzy94/JCLRNT). 
 
