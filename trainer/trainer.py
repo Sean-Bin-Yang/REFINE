@@ -185,7 +185,6 @@ class REFINETrainer:
             tloss.backward()
             torch.nn.utils.clip_grad_norm_(self.model.parameters(), 1.0)
             self.optimizer.step()
-            loss_val = torch.nn.functional.softplus(tloss.detach()).cpu().item()
             pbar.set_description('[{} Epoch {}/{}: loss: %f]'.format(iteration_type, str(epoch), str(self.epochs)) % tloss)
             losses.append(tloss.item())
         return np.array(losses).mean()
