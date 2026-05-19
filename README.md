@@ -1,4 +1,4 @@
-## REFINE: Trajectory Representation Learning via Closed-Loop Transcription
+## REFINE: Trajectory Representation Learning via Closed-Loop Transcription (KDD'26)
 
 This code is the official PyTorch implementation of our paper: REFINE
 
